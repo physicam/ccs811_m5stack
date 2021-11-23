@@ -62,7 +62,7 @@ void loop() {
       M5.Lcd.print("TVOC: ");
       M5.Lcd.print(ccs.getTVOC());
       M5.Lcd.print("ppb   ");
-      if (ccs.geteCO2() >= 1000) {
+      if (ccs.geteCO2() >= 3000) {
         playBeep();
         delay(200);
         playBeep();
@@ -72,7 +72,7 @@ void loop() {
         playBeep();
         delay(200);
         playBeep();
-      } else if (ccs.geteCO2() >= 800) {
+      } else if (ccs.geteCO2() >= 2000) {
         playBeep();
         delay(300);
         playBeep();
