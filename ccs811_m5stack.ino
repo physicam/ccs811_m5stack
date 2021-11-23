@@ -3,8 +3,6 @@
 
 Adafruit_CCS811 ccs;
 
-int count = 0;
-
 void playBeep() {
   M5.Speaker.beep();
   delay(100);
